@@ -1,13 +1,19 @@
+body{
+  background-color: #1a1919;
+  margin: 0%;
+  color:aliceblue;
+
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #282828;
     background-position: center;
     background-size: cover;
     border-color: red;
-    border-radius: 10px;
   }
   
   .logo-container {
@@ -17,6 +23,7 @@
   
   .nav-container {
     display: flex;
+  
   }
   
   .nav-container li {
@@ -51,3 +58,5 @@
     width: 80px;
     padding: 10px;
   }
+
+  

@@ -33,10 +33,10 @@ const NavBar = () => {
 
       <select className="select-language">
         <option value="" selected disabled>
-          Language
+         Aplicaciones
         </option>
-        <option value="">Español</option>
-        <option value="">日本語</option>
+        <option value="">YoutubeKids</option>
+        <option value="">YoutubeTV</option>
       </select>
       </header>
     );
