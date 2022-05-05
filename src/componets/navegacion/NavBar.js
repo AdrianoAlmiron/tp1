@@ -5,13 +5,14 @@ import logo from '../imagenes/logo.png';
 const NavBar = () => {
     return (
       <header className="header">
+
       <div className="logo-container">
         <div >
         <img className="logo-img" src={logo} alt="logo"/>
         </div> 
       </div>
       <div>
-      <input type="text" placeholder="buscar" required></input>
+      <input className="buscador" type="text" placeholder="Buscar" required></input>
       </div>
 
       <nav>

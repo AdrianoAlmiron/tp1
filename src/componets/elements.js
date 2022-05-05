@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 25px 15%;
+    padding-left: 55px;
+    padding-top: 10px;
 `
 export const Image = styled.img`
     src: ${props => props.src};

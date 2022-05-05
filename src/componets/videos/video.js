@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Container } from "../elements"
 import VideoDetails from './video-details'
 
+
 const Video = ({ src, title, description }) => {
     const [isWatched, setIsWatched] = useState(false)
 
@@ -15,10 +16,8 @@ const Video = ({ src, title, description }) => {
                 controls
                 onEnded={handleWatchedVideo}
                 style={{ 
-                    width: '80%', 
+                    width: '60%', 
                     display: 'flex',
-                    
-            
             }}
             >
                     <source src={src} type="video/mp4" />
