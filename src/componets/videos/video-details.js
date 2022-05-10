@@ -4,7 +4,7 @@ const VideoDetails = ({ isWatched, title, description }) => {
     return (
         <div>
              <a href="https://www.youtube.com/hashtag/bzrap" ><p> #BZRAP </p></a>
-            <h4>{title}</h4>
+            <h3>{title}</h3>
             <p>{description}</p> 
             <hr />
             {isWatched
