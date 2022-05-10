@@ -1,11 +1,12 @@
 import React from "react";
 import '../style/NavBar.css';
 import logo from '../imagenes/logo.png';
+import CartWidget from '../CartWidget';
 
 const NavBar = () => {
     return (
       <header className="header">
-
+        
       <div className="logo-container">
         <div >
         <img className="logo-img" src={logo} alt="logo"/>
@@ -24,8 +25,9 @@ const NavBar = () => {
             <a href="/">Crear</a>
           </li>
           <li>
-            <a href="/">Notificaciones</a>
+            <a href="/">Mi Mix</a>
           </li>
+          <CartWidget/>
           <li>
             <a href="/">Perfil</a>
           </li>

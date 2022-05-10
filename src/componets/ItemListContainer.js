@@ -37,7 +37,7 @@ export default function ItemListContainer({greeting}) {
     },[]);
 
     return (
-        <div className="itemListContainer">
+        <div className="itemListContainer" id="List">
             <h1 className="itemListContainer__title" style={{color: "white"}}>{greeting}</h1>
             {loader? <h2>Cargando...</h2>: <ItemList items={items} />}
         </div>
