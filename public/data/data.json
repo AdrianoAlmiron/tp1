@@ -1,0 +1,98 @@
+[
+    {
+        "id": "01",
+        "categoria": "List1",
+        "name": "CAZZU || BZRP Music Sessions #32",
+        "price": "300M",
+        "img": "/img/cazzu.jpg",
+        "detail": "CAZZU || BZRP Music Sessions #32"
+    },
+    {
+        "id": "02",
+        "categoria": "List1",
+        "name": "ALEMÁN || BZRP Music Sessions #15",
+        "price": "350M",
+        "img": "/img/aleman.jpg",
+        "detail": "ALEMÁN || BZRP Music Sessions #15"
+    },
+    {
+        "id": "03",
+        "categoria": "List1",
+        "name": "DANI || BZRP Music Sessions #24r",
+        "price": "400",
+        "img": "/img/dani.jpg",
+        "detail": "DANI || BZRP Music Sessions #24"
+    },
+    {
+        "id": "04",
+        "categoria": "List2",
+        "name": "PTAZETA || BZRP Music Sessions #45",
+        "price": "450",
+        "img": "/img/ptzate.jpg",
+        "detail": "PTAZETA || BZRP Music Sessions #45"
+    },
+    {
+        "id": "05",
+        "categoria": "List2",
+        "name": "RESIDENTE || BZRP Music Sessions #49",
+        "price": "500",
+        "img": "/img/residente.jpg",
+        "detail": "RESIDENTE || BZRP Music Sessions #49"
+    },
+    {
+        "id": "06",
+        "categoria": "List2",
+        "name": "TRUENO || BZRP Music Sessions #16",
+        "price": "1350",
+        "img": "/img/Trueno.jpg",
+        "detail": "TRUENO || BZRP Music Sessions #16"
+    },
+    {
+        "id": "07",
+        "categoria": "List3",
+        "name": "CHUCKY73 || BZRP Music Sessions #43",
+        "price": "1350",
+        "img": "/img/chucky.jpg",
+        "detail": "CHUCKY73 || BZRP Music Sessions #43"
+    },
+    {
+        "id": "08",
+        "categoria": "List3",
+        "name": "NICKY JAM || BZRP Music Sessions #41",
+        "price": "1300",
+        "img": "/img/nicky.jpg",
+        "detail": "NICKY JAM || BZRP Music Sessions #41"
+    },
+    {
+        "id": "09",
+        "categoria": "List3",
+        "name": "ANUEL AA || BZRP Music Sessions #46",
+        "price": "1300",
+        "img": "/img/anuel.jpg",
+        "detail": "ANUEL AA || BZRP Music Sessions #46"
+    },
+    {
+        "id": "10",
+        "categoria": "List4",
+        "name": "PAULO LONDRA || BZRP Music Sessions #23",
+        "price": "1200",
+        "img": "/img/paulo.jpg",
+        "detail": "PAULO LONDRA || BZRP Music Sessions #23."
+    },
+    {
+        "id": "11",
+        "categoria": "List4",
+        "name": "ELADIO CARRION || BZRP Music Sessions #40",
+        "price": "950",
+        "img": "/img/eladio.jpg",
+        "detail": "ELADIO CARRION || BZRP Music Sessions #40"
+    },
+    {
+        "id": "12",
+        "categoria": "List4",
+        "name": "L-GANTE || BZRP Music Sessions #38",
+        "price": "1000",
+        "img": "/img/lgante.jpg",
+        "detail": "L-GANTE || BZRP Music Sessions #38"
+    }
+]

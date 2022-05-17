@@ -1,0 +1,21 @@
+.itemDetailContainer {
+    width: 100vw;
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+@media (min-width: 600px) {
+    .itemDetailContainer {
+        height: calc(100vh - 50px);
+    }
+}
+
+@media (min-width: 768px) {
+    .itemDetailContainer {
+        height: calc(100vh - 59px);
+    }
+}

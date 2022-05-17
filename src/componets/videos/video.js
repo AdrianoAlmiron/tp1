@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Container } from "../elements"
 import VideoDetails from './video-details'
+import "./Video.css"
 
 
 const Video = ({ src, title, description }) => {
@@ -18,6 +19,7 @@ const Video = ({ src, title, description }) => {
                 style={{ 
                     width: '60%', 
                     display: 'flex',
+                    
             }}
             >
                     <source src={src} type="video/mp4" />

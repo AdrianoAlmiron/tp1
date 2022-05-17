@@ -2,45 +2,40 @@ import React from "react";
 import '../style/NavBar.css';
 import logo from '../imagenes/logo.png';
 import CartWidget from '../CartWidget';
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
-      <header className="header">
-        
+      <header className="header">    
       <div className="logo-container">
+      <NavLink to='/'>
         <div >
         <img className="logo-img" src={logo} alt="logo"/>
-        </div> 
+        </div>
+        </NavLink> 
       </div>
       <div>
-      <input className="buscador" type="text" placeholder="Buscar" required></input>
+        <input className="buscador" type="text" placeholder="Buscar" required></input>
       </div>
 
       <nav>
         <ul className="nav-container">
-          <li>
-            <a href="/">Inicio</a>
-          </li>
-          <li>
-            <a href="/">Crear</a>
-          </li>
-          <li>
-            <a href="/">Mi Mix</a>
-          </li>
-          <CartWidget/>
-          <li>
-            <a href="/">Perfil</a>
-          </li>
+        <Link to='/category/List1' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item">Mix 1</li>
+                    </Link>
+                    <Link to='/category/List2' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item">Mix 2</li>
+                    </Link>
+                    <Link to='/category/List3' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item">Mix 3</li>
+                    </Link>
+                    <Link to='/category/List4' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item">Mix 4</li>
+                    </Link>
         </ul>
       </nav>
-
-      <select className="select-language">
-        <option value="" selected disabled>
-         Aplicaciones
-        </option>
-        <option value="">YoutubeKids</option>
-        <option value="">YoutubeTV</option>
-      </select>
+      <CartWidget/>
       </header>
     );
 };

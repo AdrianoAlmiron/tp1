@@ -1,16 +1,17 @@
 import ItemCount from "./ItemCount";
 import './Item.css';
 
-export default function Item({categoria, name, price, img, id,}) {
+export default function Item({el}) {
 
     return (
         <div className="item">
-            <img className="item__img" id={id} src={img} alt="" />
+            <img className="item__img" src={el.img} alt="" />
             <div className="item__filter"></div>
             <div className='item__info'>
-                <h3 className="item__title">{name}</h3>
-                <p className='item__price'>{`Reproducciones ${price}M`}</p>
-                <ItemCount initial={1} stock={5} onAdd={(quantity)=>console.log(`${quantity} Agregado a la Lista `)}/>
+                <p className='item__category'>{el.categoria}</p>
+                <h3 className="item__title">{el.name}</h3>
+                <p className='item__price'>{`Reproducciones: ${el.price}`}</p>
+                <ItemCount id={el.id} initial={1} stock={5} onAdd={(quantity)=>console.log(`${quantity} unidad/es agregada/s al pedido`)}/>
             </div>
         </div>
     );

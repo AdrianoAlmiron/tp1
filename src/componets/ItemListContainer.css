@@ -1,3 +1,8 @@
 .itemListContainer__title{
     margin-left: 50px;
 }
+.itemList{
+    display: flex;
+    align-items:center;
+    padding: 10px;
+}
