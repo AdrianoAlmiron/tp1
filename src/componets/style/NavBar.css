@@ -29,6 +29,8 @@ body{
   .nav-container li {
     margin: 0 10px;
     list-style: none;
+    color: antiquewhite;
+
   }
   
   .nav-container li a {
@@ -38,20 +40,6 @@ body{
     font-size: 18px;
   }
   
-  .select-language {
-    appearance: none;
-    background: transparent;
-    border-style: none;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  .select-language option {
-    background: black;
-  }
 
   .logo-img{
     display: flex;
@@ -73,6 +61,7 @@ body{
     font-weight: 30px;
     color:aliceblue;
   }
+  
 
  
   

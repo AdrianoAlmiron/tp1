@@ -23,7 +23,7 @@
 }
 .item__price {
     font-size: 0.7rem;
-    margin-bottom: -0.1rem;
+    margin-bottom: 1.5rem;
 }
 .item__info {
     z-index: 2;

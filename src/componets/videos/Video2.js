@@ -16,7 +16,7 @@ const Video = ({ src, title, description }) => {
                 controls
                 onEnded={handleWatchedVideo}
                 style={{ 
-                    width: '50%', 
+                    width: '60%', 
                     display: 'flex',
             }}
             >

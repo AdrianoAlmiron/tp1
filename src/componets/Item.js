@@ -10,8 +10,8 @@ export default function Item({el}) {
             <div className='item__info'>
                 <p className='item__category'>{el.categoria}</p>
                 <h3 className="item__title">{el.name}</h3>
-                <p className='item__price'>{`Reproducciones: ${el.price}`}</p>
-                <ItemCount id={el.id} initial={1} stock={5} onAdd={(quantity)=>console.log(`${quantity} unidad/es agregada/s al pedido`)}/>
+                <p className='item__price'>{`${el.price} Vistas`}</p>
+                <ItemCount id={el.id} initial={0} stock={1} onAdd={(quantity)=>console.log(`${quantity} unidad/es agregada/s al pedido`)}/>
             </div>
         </div>
     );

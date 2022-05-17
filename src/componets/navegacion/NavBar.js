@@ -1,6 +1,13 @@
 import React from "react";
 import '../style/NavBar.css';
+
 import logo from '../imagenes/logo.png';
+import home from '../imagenes/home.png';
+import explorar from '../imagenes/explorar.png';
+import biblio from '../imagenes/biblio.png';
+import shorts from '../imagenes/shorts.png';
+import sub from '../imagenes/sub.png';
+
 import CartWidget from '../CartWidget';
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -21,21 +28,27 @@ const NavBar = () => {
 
       <nav>
         <ul className="nav-container">
-        <Link to='/category/List1' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item">Mix 1</li>
+                    <NavLink to='/' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item"><img className="home-img" src={home} alt="logo"/></li>
+                    </NavLink>
+                    <Link to='/category/List1' style={{ textDecoration: 'none' }}>
+                        <li className="navBar__item"><img className="home-img" src={explorar} alt="logo"/></li>
                     </Link>
                     <Link to='/category/List2' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item">Mix 2</li>
+                        <li className="navBar__item"><img className="home-img" src={sub} alt="logo"/></li>
                     </Link>
                     <Link to='/category/List3' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item">Mix 3</li>
+                        <li className="navBar__item"><img className="home-img" src={biblio} alt="logo"/></li>
                     </Link>
                     <Link to='/category/List4' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item">Mix 4</li>
+                        <li className="navBar__item"><img className="home-img" src={shorts} alt="logo"/></li>
                     </Link>
+                    
         </ul>
       </nav>
+      <div>
       <CartWidget/>
+      </div>
       </header>
     );
 };
