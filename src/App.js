@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './componets/navegacion/NavBar.js';
+import NavBar from './components/navegacion/NavBar';
 
-import Video from './componets/videos/video';
-import Video2 from './componets/videos/Video2';
+import Video from './components/videos/video';
+import Video2 from './components/videos/Video2';
 
-import ItemListContainer from './componets/ItemListContainer';
-import ItemDetailContainer from './componets/ItemDetailContainer.js';
+import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 
 export default function App() {
@@ -24,6 +24,7 @@ export default function App() {
         </div>
         <Routes>
           <Route path="/" element={<Video
+          id="Video"
           src="assets/videos/Londra.mp4"
            title="PAULO LONDRA || BZRP Music Sessions #23"
           description="41,753,197 vistas"
