@@ -1,3 +1,13 @@
+
+Introduccion:
+
+Se realiza un proyecto con la idea de crear una web Multimedia con lista de reproduccion.
+Uso el formato de youtube para la practica pero la idea es para el proyecto final mesclar con musica
+algo asi como un spotify y youtube. en la pagina de inicio hay videos que lo busque fuera de clase,
+buscaria perfeccionar el modelo.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
