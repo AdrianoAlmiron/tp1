@@ -5,7 +5,7 @@ import "./Video.css"
 
 
 const Video = ({ src, title, description }) => {
-    const [isWatched, setIsWatched] = useState(false)
+    const [isWatched, setIsWatched] = useState(true)
 
     const handleWatchedVideo = () => {
         setIsWatched(true)

@@ -11,7 +11,7 @@ export default function ItemCount({stock, initial, onAdd}) {
     }
 
     function decrease() {
-        if (quantity > 1) {
+        if (quantity > 0) {
             setQuantity(quantity - 1);
         } 
     }
@@ -22,9 +22,9 @@ export default function ItemCount({stock, initial, onAdd}) {
 
     return (
         <div className="itemCount">
-            <button id='less' className="itemCount__minusBtn" onClick={decrease}>-</button>
+            <button id='less' className="itemCount__minusBtn" onClick={decrease}>Quitar</button>
             <span className="itemCount__quantity">{quantity}</span>
-            <button id='plus' className="itemCount__plusBtn" onClick={increase}>+</button>
+            <button id='plus' className="itemCount__plusBtn" onClick={increase}>Agregar</button>
             <button className="itemCount__addToCartBtn" onClick={addToCart}><i class="bi bi-bag-plus"></i></button>
         </div>
     );

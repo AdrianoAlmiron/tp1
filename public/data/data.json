@@ -6,7 +6,8 @@
         "name": "CAZZU || BZRP Music Sessions #32",
         "price": "30M",
         "img": "/img/cazzu.jpg",
-        "detail": "CAZZU || BZRP Music Sessions #32"
+        "detail": "CAZZU || BZRP Music Sessions #32",
+        "video":"/videos/cazzu.mp4"
     },
     {
         "id": "02",
@@ -15,7 +16,8 @@
         "name": "ALEMÁN || BZRP Music Sessions #15",
         "price": "35M",
         "img": "/img/aleman.jpg",
-        "detail": "ALEMÁN || BZRP Music Sessions #15"
+        "detail": "ALEMÁN || BZRP Music Sessions #15",
+        "video":"/videos/aleman.mp4"
     },
     {
         "id": "03",
@@ -24,7 +26,8 @@
         "name": "DANI || BZRP Music Sessions #24r",
         "price": "4M",
         "img": "/img/dani.jpg",
-        "detail": "DANI || BZRP Music Sessions #24"
+        "detail": "DANI || BZRP Music Sessions #24",
+        "video":"/videos/dani.mp4"
     },
     {
         "id": "04",
@@ -33,7 +36,8 @@
         "name": "PTAZETA || BZRP Music Sessions #45",
         "price": "450M",
         "img": "/img/ptzate.jpg",
-        "detail": "PTAZETA || BZRP Music Sessions #45"
+        "detail": "PTAZETA || BZRP Music Sessions #45",
+        "video":"/videos/ptazeta.mp4"
     },
     {
         "id": "05",
@@ -42,7 +46,8 @@
         "name": "RESIDENTE || BZRP Music Sessions #49",
         "price": "50M",
         "img": "/img/residente.jpg",
-        "detail": "RESIDENTE || BZRP Music Sessions #49"
+        "detail": "RESIDENTE || BZRP Music Sessions #49",
+        "video":"/videos/Rene.mp4"
     },
     {
         "id": "06",
@@ -51,7 +56,8 @@
         "name": "TRUENO || BZRP Music Sessions #16",
         "price": "1M",
         "img": "/img/Trueno.jpg",
-        "detail": "TRUENO || BZRP Music Sessions #16"
+        "detail": "TRUENO || BZRP Music Sessions #16",
+        "video":"/videos/trueno.mp4"
     },
     {
         "id": "07",
@@ -60,7 +66,8 @@
         "name": "CHUCKY73 || BZRP Music Sessions #43",
         "price": "13M",
         "img": "/img/chucky.jpg",
-        "detail": "CHUCKY73 || BZRP Music Sessions #43"
+        "detail": "CHUCKY73 || BZRP Music Sessions #43",
+        "video":"/videos/Chuky.mp4"
     },
     {
         "id": "08",
@@ -69,7 +76,8 @@
         "name": "NICKY JAM || BZRP Music Sessions #41",
         "price": "19M",
         "img": "/img/nicky.jpg",
-        "detail": "NICKY JAM || BZRP Music Sessions #41"
+        "detail": "NICKY JAM || BZRP Music Sessions #41",
+        "video":"/videos/nicky.mp4"
     },
     {
         "id": "09",
@@ -78,7 +86,8 @@
         "name": "ANUEL AA || BZRP Music Sessions #46",
         "price": "100M",
         "img": "/img/anuel.jpg",
-        "detail": "ANUEL AA || BZRP Music Sessions #46"
+        "detail": "ANUEL AA || BZRP Music Sessions #46",
+        "video":"/videos/anuel.mp4"
     },
     {
         "id": "10",
@@ -87,7 +96,8 @@
         "name": "PAULO LONDRA || BZRP Music Sessions #23",
         "price": "12M",
         "img": "/img/paulo.jpg",
-        "detail": "PAULO LONDRA || BZRP Music Sessions #23."
+        "detail": "PAULO LONDRA || BZRP Music Sessions #23.",
+        "video":"/videos/Londra.mp4"
     },
     {
         "id": "11",
@@ -96,7 +106,8 @@
         "name": "ELADIO CARRION || BZRP Music Sessions #40",
         "price": "95M",
         "img": "/img/eladio.jpg",
-        "detail": "ELADIO CARRION || BZRP Music Sessions #40"
+        "detail": "ELADIO CARRION || BZRP Music Sessions #40",
+        "video":"/videos/eladio.mp4"
     },
     {
         "id": "12",
@@ -105,6 +116,7 @@
         "name": "L-GANTE || BZRP Music Sessions #38",
         "price": "10M",
         "img": "/img/lgante.jpg",
-        "detail": "L-GANTE || BZRP Music Sessions #38"
+        "detail": "L-GANTE || BZRP Music Sessions #38",
+        "video":"/videos/elegante.mp4"
     }
 ]

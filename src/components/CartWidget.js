@@ -8,7 +8,7 @@ export default function CartWidget() {
         <button className="cart">
             <a href="#List" className="cart__link">
                 <span className="cart__icon"><i class="bi bi-bag"></i></span>
-                <span className="cart__counter">0</span>
+                <span className="cart__counter"></span>
             </a>
         </button>
         </Link>

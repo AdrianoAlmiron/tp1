@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import Loader from "./loading";
 import './style/ItemDetailContainer.css';
 
 
@@ -22,7 +23,9 @@ export default function ItemDetailContainer() {
 
     return (
         <div className="itemDetailContainer">
-            {loader? <h2>Cargando...</h2>: <ItemDetail item={item}/>}
+            {loader?
+            <Loader/>:
+            <ItemDetail item={item} />}
         </div>
         
     );

@@ -9,7 +9,10 @@
     margin: 1rem auto;
     cursor: pointer;
 }
-
+button{
+    background: none;
+    border: 0;
+}
 .item__play {
     width: 50px;
     padding: initial;
