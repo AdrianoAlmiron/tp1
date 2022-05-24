@@ -16,6 +16,6 @@
 
 @media (min-width: 768px) {
     .itemDetailContainer {
-        height: calc(100vh - 59px);
+        height: calc(100vh - 50px);
     }
 }
