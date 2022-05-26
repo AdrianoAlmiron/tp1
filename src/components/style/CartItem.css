@@ -1,0 +1,7 @@
+li {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.cart__remove-icon {
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@ export default function BuyButtons() {
     return (
         <div className="buyButtons">
             <Link to='/cart'>
-                <button className="buyButtons__goToCart">Ver pedido</button>
+                <button className="buyButtons__goToCart">Ver Lista</button>
             </Link>
             <Link to='/'>
                 <button className="buyButtons__goToMenu">Volver al menú</button>

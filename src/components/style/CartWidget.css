@@ -1,13 +1,13 @@
-.cart {
+.cartWidget {
     display: flex;
     position: relative;
 }
-.cart__icon {
+.cartWidget__icon {
     color: white;
     background-color: #1c1c1c;
     font-size: 3rem;
 }
-.cart__counter {
+.cartWidget__counter {
     color: white;
     background-color: red;
     padding: 0rem 0.5rem 0rem 0.4rem;
@@ -19,8 +19,17 @@
     transform: translateX(10%) translateY(10%);
     font-size: 1.2rem;
     font-weight: bold;
+    opacity: 0%;
 }
 
+@media (min-width: 768px) {
+    .cartWidget__icon {
+        font-size: 3.5rem;
+    }
+    .cartWidget__counter {
+        font-size: 1.5rem;
+    }
+}
 @media (min-width: 768px) {
     .cart__icon {
         font-size: 3.5rem;

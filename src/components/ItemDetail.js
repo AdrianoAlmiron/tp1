@@ -9,19 +9,13 @@ import Video from "./videos/video";
 
 export default function ItemDetail({item}) {
     const [inputType, setInputType] = useState('itemCount');
-    //const [quantityToAdd,setQuantityToAdd] = useState();
-    const {addToCart, cartList} = UseCartContext();
+    const {addToCart} = UseCartContext();
     
-    function onAdd(quantity, name) {
-        //setQuantityToAdd(quantity)
-        console.log(`${quantity} unidad/es de ${name} agregada/s al pedido`);
-        addToCart({item, quantity})
-    }
-    function handleInputType() {
+    function onAdd(quantity) {
+        addToCart({...item, quantity})
         setInputType('buyButtons');
     }
-    
-    console.log(cartList);
+   
 
 
     return (
@@ -32,7 +26,7 @@ export default function ItemDetail({item}) {
                 <h3 className="itemDetail__title">{item.name}</h3>
                 <p className="itemDetail__detail">{item.detail}</p>
                 {inputType === 'itemCount' ?
-                    <ItemCount item={item} initial={1} stock={5} onAdd={onAdd} handleInputType={handleInputType}/>:
+                    <ItemCount item={item} initial={1} stock={5} onAdd={onAdd} />:
                     <BuyButtons/>}
             </div>
             <video className="itemDetail__video" src={item.video} width="320" height="240" autoplay="true" controls

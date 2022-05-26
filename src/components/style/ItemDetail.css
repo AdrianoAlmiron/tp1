@@ -19,7 +19,7 @@
   top: 0;
   color: #fff;
 }
-.itemDetail img{
+.itemDetail > img{
     opacity: 50%;
     border-radius: 10%;
     margin: 10px;
@@ -27,7 +27,7 @@
    
 }
 
-.itemDetail__info img { position: absolute; top: 0; right: 0; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.itemDetail__info img { position:relative; top: 0; right: 0; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
 .itemDetail__tittle { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
 .itemDetail__info p img { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
 @media (min-aspect-ratio: 16/9) {

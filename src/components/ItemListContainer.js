@@ -4,7 +4,7 @@ import ItemList from "./ItemList";
 import Loader from "./loading";
 import "./style/ItemListContainer.css"
 
-export default function ItemListContainer({greeting}) {
+export default function ItemDetailContainer() {
     const [items,setItems] = useState([]);
     const [loader,setLoader] = useState(true);
     const {id} = useParams();

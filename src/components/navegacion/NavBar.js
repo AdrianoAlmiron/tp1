@@ -8,6 +8,7 @@ import biblio from './img/biblio.png';
 import shorts from './img/shorts.png';
 import sub from './img/sub.png';
 
+
 import CartWidget from '../CartWidget';
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -25,30 +26,41 @@ const NavBar = () => {
       <div>
         <input className="buscador" type="text" placeholder="Buscar" required></input>
       </div>
-
       <nav>
         <ul className="nav-container">
-                    <NavLink to='/' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item"><img className="home-img" src={home} alt="logo"/></li>
-                    </NavLink>
-                    <Link to='/category/MIX 1' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item"><img className="home-img" src={explorar} alt="logo"/></li>
-                    </Link>
-                    <Link to='/category/MIX 2' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item"><img className="home-img" src={sub} alt="logo"/></li>
-                    </Link>
-                    <Link to='/category/MIX 3' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item"><img className="home-img" src={biblio} alt="logo"/></li>
-                    </Link>
-                    <Link to='/category/MIX 4' style={{ textDecoration: 'none' }}>
-                        <li className="navBar__item"><img className="home-img" src={shorts} alt="logo"/></li>
-                    </Link>
-                    
+                        <li className="navBar__item">
+                          <NavLink to='/' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={home} alt="logo"/>
+                          </NavLink>
+                        </li>
+                        <li className="navBar__item">
+                          <Link to='/category/MIX 1' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={explorar} alt="logo"/>
+                          </Link>
+                        </li>                  
+                        <li className="navBar__item">
+                          <Link to='/category/MIX 2' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={sub} alt="logo"/>
+                          </Link>
+                        </li>                      
+                        <li className="navBar__item">
+                          <Link to='/category/MIX 3' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={biblio} alt="logo"/>
+                          </Link>
+                        </li>                   
+                        <li className="navBar__item">
+                          <Link to='/category/MIX 4' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={shorts} alt="logo"/>
+                          </Link>
+                        </li>
+                        <li className="navBar__item">
+                          <Link to='/cart' style={{ textDecoration: 'none' }}>
+                          <img className="home-img" src={sub} alt="logo"/>
+                          <CartWidget/>
+                          </Link>
+                        </li>
         </ul>
       </nav>
-      <div>
-      <CartWidget/>
-      </div>
       </header>
     );
 };

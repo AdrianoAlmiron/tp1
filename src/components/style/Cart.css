@@ -1,0 +1,19 @@
+.cart{ 
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+.cart p {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.cart button{
+    color: antiquewhite;
+    border-bottom:10px;
+    border-color: white;
+    background-color: rgb(212, 14, 14);
+    border-radius: 50%;
+    cursor: pointer;
+}
