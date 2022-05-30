@@ -6,4 +6,7 @@ import getFirestoreApp from "./firebase/config";
 getFirestoreApp()
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <App />,
+    document.getElementById("root")
+);

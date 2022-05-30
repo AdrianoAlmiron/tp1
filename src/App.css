@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -27,6 +28,30 @@
 .App-link {
   color: #61dafb;
 }
+
+.grid {
+  display: flex;
+
+}
+
+.Videoprincipal iframe{
+  width: 55rem;
+  height: 30rem;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.Detail{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.Buscadorbarra{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -13,6 +13,9 @@ import CartWidget from '../CartWidget';
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
+
+
 const NavBar = () => {
     return (
       <header className="header">    
@@ -22,10 +25,8 @@ const NavBar = () => {
         <img className="logo-img" src={logo} alt="logo"/>
         </div>
         </NavLink> 
-      </div>
-      <div>
-        <input className="buscador" type="text" placeholder="Buscar" required></input>
-      </div>
+      </div> 
+      
       <nav>
         <ul className="nav-container">
                         <li className="navBar__item">
