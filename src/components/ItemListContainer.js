@@ -7,7 +7,7 @@ import "./style/ItemListContainer.css"
 export default function ItemDetailContainer() {
     const [items,setItems] = useState([]);
     const [loader,setLoader] = useState(true);
-    const {id} = useParams();
+    const {id} = useParams(3);
 
     useEffect(() => {
         setTimeout(() => {

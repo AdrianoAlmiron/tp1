@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import Loader from "./loading";
 import './style/ItemDetailContainer.css';
+import Video from "./videos/video";
 
 
 export default function ItemDetailContainer() {
@@ -26,9 +27,13 @@ export default function ItemDetailContainer() {
             {loader?
             <Loader/>:
             <ItemDetail item={item} /> }
-            
-            
+            <div>
+        <video className="itemDetail__video" src={item.video} width="320" height="240" autoplay="true" controls
+            onEnded={Video}
+            poster={item.img}></video>
+            </div>
         </div>
+        
         
     );
 }

@@ -1,14 +1,15 @@
 
 * { box-sizing: border-box; }
-.itemDetailContainer .itemDetail__video {
-  background: #000;
+.itemDetail__video {
+  background: rgb(0, 0, 0);
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
 }
+
 .itemDetail__video,
 .itemDetail video {
-  position: absolute;
+  position: inherit;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,12 +19,11 @@
 .itemDetail__info img {
   top: 0;
   color: #fff;
+  margin: 10px;
 }
 .itemDetail > img{
-    opacity: 50%;
     border-radius: 10%;
-    margin: 10px;
-    padding-left: 20px;
+    
    
 }
 

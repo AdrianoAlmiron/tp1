@@ -29,9 +29,6 @@ export default function ItemDetail({item}) {
                     <ItemCount item={item} initial={1} stock={5} onAdd={onAdd} />:
                     <BuyButtons/>}
             </div>
-            <video className="itemDetail__video" src={item.video} width="320" height="240" autoplay="true" controls
-                onEnded={Video}
-                poster={item.img}></video>
         </div>
     );
 }

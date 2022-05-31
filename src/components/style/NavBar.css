@@ -27,7 +27,7 @@ body{
   }
   
   .nav-container li {
-    margin: 0 10px;
+    margin: 0 18px;
     list-style: none;
     color: antiquewhite;
 
@@ -51,7 +51,7 @@ body{
   }
   .buscador{
     background-color: black;
-    width: 30rem;
+    width: 20rem;
     height: 30px;
     margin: 0px;
     border-color: #282828;

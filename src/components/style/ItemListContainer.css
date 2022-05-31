@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items:center;
     justify-content: center;
-    padding: 10px;
+    
 }
 
 
@@ -22,13 +22,12 @@ body {
 
 .item {
 	width: 90%;
-	margin: auto;
+	
 }
 
 
 .itemList {
 	font-size: 16px;
-	min-height: 40.62em;
 	color: #fff;
 	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%);
 	background-position: center center;

@@ -1,4 +1,6 @@
 .item {
+    display: flex !important;
+    align-items: center;
     width: 100%;
     min-width: 250px;
     max-width: 320px;
@@ -6,7 +8,7 @@
     position: relative;
     border-radius: 5%;
     overflow: hidden;
-    margin: 1rem auto;
+    margin: 0.5rem;
     cursor: pointer;
 }
 button{

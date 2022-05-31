@@ -43,24 +43,23 @@ render() {
         <div className='App'>
         <NavBar />
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <div className='grid'>
-          <div className='row'>
+        <div className='row'>
             <VideoDetail video={this.state.selectedVideo} />
-            </div>
-            <div className='fiveColumn'>
-        <Routes>
-          <Route path="/" element={<VideoList
+            </div> 
+        <VideoList
                 onVideoSelect={this.onVideoSelect}
                 videos={this.state.videos}
-              />} />
+              />
+              <div>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>} />
           <Route path="/category/:id" element={<ItemListContainer />} />
-          <Route path="/itemDetail/:id" element={<ItemDetailContainer/>} />
+          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
           <Route path="/*" element={<Navigate to="/" replace/>} />
           <Route path="/cart" element={<Cart/>} />
         </Routes>
         </div>
-        </div>
-        </div>
+        </div>  
     </BrowserRouter>
   </CartContextProv>
   );
