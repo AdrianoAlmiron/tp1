@@ -32,7 +32,7 @@ body {
 	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%);
 	background-position: center center;
 	background-size: cover;
-	margin-bottom: 3.12em;
+	
 	display: flex;
 	align-items:center;
 }

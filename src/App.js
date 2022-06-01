@@ -38,32 +38,33 @@ onVideoSelect = (video) => {
 
 render() {
   return (
-  <CartContextProv>
-    <BrowserRouter>
-        <div className='App'>
-        <NavBar />
-        <SearchBar onFormSubmit={this.onTermSubmit} />
-        <div className='row'>
-            <VideoDetail video={this.state.selectedVideo} />
-            </div> 
-        <VideoList
-                onVideoSelect={this.onVideoSelect}
-                videos={this.state.videos}
-              />
-              <div>
-        <Routes>
-          <Route path="/" element={<ItemListContainer/>} />
-          <Route path="/category/:id" element={<ItemListContainer />} />
-          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
-          <Route path="/*" element={<Navigate to="/" replace/>} />
-          <Route path="/cart" element={<Cart/>} />
-        </Routes>
-        </div>
-        </div>  
-    </BrowserRouter>
-  </CartContextProv>
-  );
-}
-}
-export default App
+    <CartContextProv>
+      <BrowserRouter>
+          <div className='App'>
+          <NavBar />
+          <SearchBar onFormSubmit={this.onTermSubmit} />
+          <div className='row'>
+              <VideoDetail video={this.state.selectedVideo} />
+              </div> 
+          <VideoList
+                  onVideoSelect={this.onVideoSelect}
+                  videos={this.state.videos}
+                />
+                <div>
+                  <hr/>
+          <Routes>
+            <Route path="/" element={<ItemListContainer/>} />
+            <Route path="/category/:id" element={<ItemListContainer />} />
+            <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+            <Route path="/*" element={<Navigate to="/" replace/>} />
+            <Route path="/cart" element={<Cart/>} />
+          </Routes>
+          </div>
+          </div>  
+      </BrowserRouter>
+    </CartContextProv>
+    );
+  }
+  }
+  export default App
 

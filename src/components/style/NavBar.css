@@ -51,11 +51,12 @@ body{
   }
   .buscador{
     background-color: black;
-    width: 20rem;
-    height: 30px;
-    margin: 0px;
-    border-color: #282828;
+    width: 15rem;
+    height: 40px;
+    margin: -8px;
+    border-color: #cdcaca;
     color: aliceblue;
+    font-size: medium;
   }
   .buscador ::placeholder{
     font-weight: 30px;
