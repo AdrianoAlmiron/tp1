@@ -11,7 +11,7 @@ export default function CartItem({item}) {
     return (
         <div>
             <img src={item.img} alt=""/>
-        <li> {item.name} - Reproducciones: {item.price} - Cantidad: {item.quantity} - <span className="cart__remove-icon" onClick={removeItem}><i className="bi bi-bag-x-fill"></i></span></li>
+        <li> {item.name} - Reproducciones: {item.price} - Cantidad: {item.quantity} - <span className="cart__remove-icon" onClick={removeItem}></span></li>
         </div>
     );
 }

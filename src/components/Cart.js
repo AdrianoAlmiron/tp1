@@ -1,17 +1,38 @@
 import { Link } from "react-router-dom";
 import { UseCartContext } from "../context/CartContext";
-import CartItem from "./CartItem";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
+import CartList from "./CartList.js";
 import './style/Cart.css';
 
 export default function Cart() {
-    const {cartList, clearCart, totalPrice, totalItems} = UseCartContext();
+    const {totalItems, totalPrice, cartList, clearCart} = UseCartContext();
     
+    function createOrder() {
+        let order = {};
+        
+        order.buyer = {name: 'Rafa', email: 'rafafloresok@gmail.com', phone: '2964603008' };
+        order.total = totalPrice;
+        order.items = cartList.map(item => {
+            const id = item.id;
+            const name = item.name;
+            const price = item.price*item.quantity;
+            return {id, name, price}
+        });
+
+        const db = getFirestore();
+        const queryCollection = collection(db, 'orders');
+        addDoc(queryCollection, order)
+        .then(resp => console.log(resp))
+        .catch(err => console.log(err))
+        .finally(() => clearCart())
+    }
+
     if (!totalItems) {
         return (
             <div className="cart">
                 <h1>Lista Vacia</h1>
                 <Link to='/'>
-                    <button>Volver al menú</button>
+                    <button>Volver a Inicio</button>
                 </Link>
             </div>
         );
@@ -19,10 +40,7 @@ export default function Cart() {
 
     return (
         <div className="cart">
-            <h1 className="cart__title">Tu Lista de repodruccion:</h1>
-            {cartList.map(el => <CartItem key={el.id} item={el}/>)}
-            <p>{`Reproducciones $${totalPrice}`}</p>
-            <button onClick={clearCart}>Vaciar Lista</button>
+            <CartList createOrder={createOrder}/>
         </div>
     );
 }

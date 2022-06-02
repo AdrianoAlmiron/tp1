@@ -28,9 +28,7 @@ export default function CartContextProv({children}) {
         updateCart([]);
     }
     function clearItem(id) {
-        let i = cartList.findIndex(el => el.id === id);
-        const newCartList = cartList;
-        newCartList.splice(i,1);
+        const newCartList = cartList.filter(el => el.id !== id);
         updateCart(newCartList);
     }
     function updateCart(arr) {
@@ -48,11 +46,11 @@ export default function CartContextProv({children}) {
     return (
         <cartContext.Provider value={{
             cartList,
+            totalPrice,
+            totalItems,
             addToCart,
             clearCart,
-            clearItem,
-            totalPrice,
-            totalItems
+            clearItem
         }}>
             {children}
         </cartContext.Provider>

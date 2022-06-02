@@ -11,6 +11,7 @@ export default function ItemDetailContainer() {
     const [item,setItem] = useState({});
     const [loader,setLoader] = useState(true);
     const {id} = useParams();
+    console.log(item);
 
     useEffect(() => {
         const db = getFirestore();
@@ -20,19 +21,21 @@ export default function ItemDetailContainer() {
         .catch(err => console.log(err))
         .finally(() => setLoader(false))
     },[id]);
-
+    
     return (
         <div className="itemDetailContainer">
             {loader?
             <Loader/>:
             <ItemDetail item={item} /> }
             <div>
-        <video className="itemDetail__video" src={item.video} width="320" height="240" autoplay="true" controls
+        <video className="itemDetail__video" src={item.video} width="320" height="240"  controls
             onEnded={Video}
-            poster={item.img}></video>
+            poster={item.img}><source src={item.video} type="video/mp4"></source></video>
+            
             </div>
         </div>
         
         
     );
+    
 }

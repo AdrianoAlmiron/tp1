@@ -43,8 +43,8 @@ body{
 
   .logo-img{
     display: flex;
-    width: 80px;
-    padding: 10px;
+    width: 70px;
+    padding: 5px;
   }
   .logo{
     border-radius: 50px;
