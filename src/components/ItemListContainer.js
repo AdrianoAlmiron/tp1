@@ -5,7 +5,7 @@ import ItemList from "./ItemList";
 import Loader from "./loading";
 import "./style/ItemListContainer.css"
 
-export default function ItemDetailContainer() {
+export default function ItemListContainer() {
     const [items,setItems] = useState([]);
     const [loader,setLoader] = useState(true);
     const {id} = useParams();
@@ -41,7 +41,7 @@ export default function ItemDetailContainer() {
         <div className="itemListContainer">
             {loader? 
             <Loader/>:
-            <ItemList items={items} id={id} />}
+            <ItemList items={items}  />}
         </div>
     );
 }

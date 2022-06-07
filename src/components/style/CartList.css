@@ -1,3 +1,11 @@
 .cartList { 
     text-align: center;
 }
+.cartList h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+.catList p {
+    font-size: 2rem;
+    margin: 1rem;
+}

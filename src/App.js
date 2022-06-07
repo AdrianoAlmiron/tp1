@@ -5,10 +5,12 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import CartContextProv from "./context/CartContext";
 import Cart from './components/Cart';
+
 import VideoDetail from './components/VideoDetail';
 import Youtube from './Apis/Youtube';
 import SearchBar from './components/navegacion/SearchBar';
 import VideoList from './components/VideoList';
+
 import "./App.css"
 
 class App extends React.Component {

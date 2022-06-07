@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from './reportWebVitals';
 import getFirestoreApp from "./firebase/config";
+import './index.css';
 
 getFirestoreApp();
 

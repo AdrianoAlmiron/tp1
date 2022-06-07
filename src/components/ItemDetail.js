@@ -7,10 +7,11 @@ import './style/ItemDetail.css';
 
 
 
+
 export default function ItemDetail({item}) {
     const [inputType, setInputType] = useState('itemCount');
     const {addToCart} = UseCartContext();
-    console.log(item);
+    
     
     function onAdd(quantity) {
         addToCart({...item, quantity})

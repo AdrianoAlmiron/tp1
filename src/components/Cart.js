@@ -1,38 +1,24 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { UseCartContext } from "../context/CartContext";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
 import CartList from "./CartList.js";
 import './style/Cart.css';
 
 export default function Cart() {
-    const {totalItems, totalPrice, cartList, clearCart} = UseCartContext();
-    
-    function createOrder() {
-        let order = {};
-        
-        order.buyer = {name: 'Rafa', email: 'rafafloresok@gmail.com', phone: '2964603008' };
-        order.total = totalPrice;
-        order.items = cartList.map(item => {
-            const id = item.id;
-            const name = item.name;
-            const price = item.price*item.quantity;
-            return {id, name, price}
-        });
+    const {totalItems, orderId, createOrder} = UseCartContext();
+    const [orderSent, setOrderSent] = useState(false)
 
-        const db = getFirestore();
-        const queryCollection = collection(db, 'orders');
-        addDoc(queryCollection, order)
-        .then(resp => console.log(resp))
-        .catch(err => console.log(err))
-        .finally(() => clearCart())
-    }
+    function sendOrderManage(customerData) {
+         setOrderSent(true);
+         createOrder(customerData);
+     }
 
-    if (!totalItems) {
+     if (!totalItems) {
         return (
             <div className="cart">
-                <h1>Lista Vacia</h1>
+                {orderSent ? <h1>Pedido enviado! Nro de pedido: {orderId}</h1> : <h1>El pedido está vacío</h1>}
                 <Link to='/'>
-                    <button>Volver a Inicio</button>
+                    <button>Volver al menú</button>
                 </Link>
             </div>
         );
@@ -40,7 +26,7 @@ export default function Cart() {
 
     return (
         <div className="cart">
-            <CartList createOrder={createOrder}/>
+            <CartList sendOrderManage={sendOrderManage}/>
         </div>
     );
 }
