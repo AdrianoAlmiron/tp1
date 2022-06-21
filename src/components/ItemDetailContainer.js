@@ -28,9 +28,11 @@ export default function ItemDetailContainer() {
             <Loader/>:
             <ItemDetail item={item} /> }
             <div>
-        <video className="itemDetail__video" src={item.video} width="320" height="240"  controls
+        <video className="itemDetail__video" src={item.video} width="320" height="240"  autoPlay
             onEnded={Video}
-            poster={item.img}></video>
+            poster={item.img}>
+
+            </video>
             
             </div>
         </div>

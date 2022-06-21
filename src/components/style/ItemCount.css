@@ -28,15 +28,16 @@
     color: white;
     margin-left: 1rem;
 }
-.itemCount__addToCartBtn img {
-    margin-left: 3rem;
+.itemCount__addToCartBtn {
+    margin-left: 2rem;
     border: none;
-    background: rgba(0,0,0,0);
-    border-radius: 10%;
+    background: rgba(252, 52, 2, 0.671);
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
 }
 
 @media (min-width: 600px) {

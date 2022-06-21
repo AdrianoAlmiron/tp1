@@ -1,30 +1,18 @@
 import { useState } from 'react';
-import sub from '../components/navegacion/img/sub.png';
 import './style/ItemCount.css';
 
-export default function ItemCount({initial, stock, onAdd}) {
-    const [quantity, setQuantity] = useState(initial);
+export default function ItemCount({currentStock, onAdd}) {
+    const [quantity, setQuantity] = useState(1);
 
-    function increase() {
-        if (quantity < stock) {
-            setQuantity(quantity + 1);
-        } 
-    }
-    function decrease() {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-        } 
-    }
-    function addItem() {
-        onAdd(quantity);
-    }
+    const increase = () => quantity < currentStock && setQuantity(quantity + 1);
+    const decrease = () => quantity > 1 && setQuantity(quantity - 1);
 
     return (
         <div className="itemCount">
-            <button id='less' className="itemCount__minusBtn" onClick={decrease}>-</button>
-            <span className="itemCount__quantity">{quantity}</span>
-            <button id='plus' className="itemCount__plusBtn" onClick={increase}>+</button>
-            <button className="itemCount__addToCartBtn" onClick={addItem}><img className="bi bi-bag-plus" src={sub} alt="logo" /></button>
+            <button id='less' className="itemCount__minusBtn" onClick={decrease} style={{pointerEvents: currentStock <= 0 && 'none', opacity: currentStock <= 0 && '0.5'}}>-</button>
+            <span className="itemCount__quantity" style={{opacity: currentStock <= 0 && '0.5'}}>{currentStock <= 0 ? 0 : quantity}</span>
+            <button id='plus' className="itemCount__plusBtn" onClick={increase} style={{pointerEvents: currentStock <= 0 && 'none', opacity: currentStock <= 0 && '0.5'}}>+</button>
+            <button className="itemCount__addToCartBtn" onClick={() => onAdd(quantity)} style={{pointerEvents: currentStock <= 0 && 'none', opacity: currentStock <= 0 && '0.5'}}>Mi lista</button>
         </div>
     );
-}
+};

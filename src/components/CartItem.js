@@ -3,15 +3,15 @@ import './style/CartItem.css';
 
 export default function CartItem({item}) {
     const {clearItem} = UseCartContext();
-
-    function removeItem() {
-        clearItem(item.id)
-    }
     
     return (
-        <div>
-            <img src={item.img} alt=""/>
-        <li> {item.name} - Reproducciones: {item.price} - Cantidad: {item.quantity} - <span className="cart__remove-icon" onClick={removeItem}></span></li>
-        </div>
+        <li className="cartItem">
+            <span className="cartItem__name">{item.name}</span>
+            <hr/>
+            <span className="cartItem__quantity">Cantidad: {item.quantity}</span>
+            <span className="cartItem__subtotal"> Reproducciones: {item.price*item.quantity}</span>
+            <span className="cartItem__remove-icon" onClick={() => clearItem(item)}></span>
+            <hr />
+        </li>
     );
 }

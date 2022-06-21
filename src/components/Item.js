@@ -4,20 +4,20 @@ import './style/Item.css';
 
 
 
-export default function Item({el}) {
+export default function Item({item}) {
 
     return (
         <div className="item">
-            <img className="item__img" src={el.img} alt="" />
-            <div className="item__filter"></div>
+            <img className="item__img" src={item.img} alt="" style={{filter: item.stock <= 0 && 'grayscale(100%)'}}/>
+            <div className='item__filter'></div>
             <div className='item__info'>
-                <Link to={`/itemDetail/${el.id}`}>
-                <button className="Item_addBtn"><img className="item__play" src={el.play} alt="" /></button>
+                <p className='item__category'>{item.category}</p>
+                <h3 className="item__title">{item.name}</h3>
+                <p className='item__price'>{`Repoducciones: ${item.price}M`}</p>
+                <Link to={`/itemDetail/${item.id}`} style={{pointerEvents: item.stock <= 0 && 'none'}}>
+                    <button className="item__addBtn" >{item.stock <= 0 ? 'No disponible' : 'Ver detalle'}</button>
                 </Link>
-                <h3 className="item__title">{el.name}</h3>
-                <p className='item__price'>{`${el.price} Vistas`}</p>
             </div>
         </div>
-        
     );
 }

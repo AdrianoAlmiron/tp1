@@ -26,7 +26,6 @@ const NavBar = () => {
         </div>
         </NavLink> 
       </div> 
-      
       <nav>
         <ul className="nav-container">
                         <li className="navBar__item">
@@ -35,7 +34,7 @@ const NavBar = () => {
                           </NavLink>
                         </li>
                         <li className="navBar__item">
-                          <Link to='/category/MIX 1' style={{ textDecoration: 'none' }}>
+                          <Link to='/categoria/MIX 1' style={{ textDecoration: 'none' }}>
                           <img className="home-img" src={explorar} alt="logo"/>
                           </Link>
                         </li>                  
@@ -62,6 +61,7 @@ const NavBar = () => {
                         </li>
         </ul>
       </nav>
+      <CartWidget/>
       </header>
     );
 };

@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UseCartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
 import BuyButtons from "./BuyButtons";
-import Barras from "./Barras";
 import './style/ItemDetail.css';
 
 
@@ -10,7 +9,7 @@ import './style/ItemDetail.css';
 
 export default function ItemDetail({item}) {
     const [inputType, setInputType] = useState('itemCount');
-    const {addToCart} = UseCartContext();
+    const {qtyInCart, addToCart, checkQtyInCart} = UseCartContext();
     
     
     function onAdd(quantity) {
@@ -18,16 +17,18 @@ export default function ItemDetail({item}) {
         setInputType('buyButtons');
     }
 
+    useEffect(() => {
+        checkQtyInCart(item);
+    });
+
     return (
         <div className="itemDetail">
-            <Barras/>
             <img className="itemDetail__img" src={item.img} alt="" />
             <div className='itemDetail__info'>
                 <h3 className="itemDetail__title">{item.name}</h3>
                 <p className="itemDetail__detail">{item.detail}</p>
-                {inputType === 'itemCount' ?
-                    <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />:
-                    <BuyButtons/>}
+                {inputType === 'itemCount' ? <ItemCount item={item} currentStock={item.stock - qtyInCart} onAdd={onAdd}/> : <BuyButtons/>}
+                
             </div>
         </div>
     );

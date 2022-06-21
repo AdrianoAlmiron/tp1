@@ -14,6 +14,8 @@
 button{
     background: none;
     border: 0;
+    color:brown;
+    cursor: pointer;
 }
 .item__play {
     width: 50px;
